@@ -1,0 +1,18 @@
+[package]
+name = "back-bot"
+version = "0.1.0"
+authors = ["Eder Nilson"]
+edition = "2021"
+#default-run="basic-server"
+
+
+#[[bin]]
+#name = "basic-server"
+
+[dependencies]
+actix-web = "3.0.0"
+actix-rt = "2.7.0"
+# Data serialization library
+serde = { version = "1.0.110", features = ["derive"]}
+# Other utilities
+chrono = { version = "0.4.11", features = ["serde"]}
